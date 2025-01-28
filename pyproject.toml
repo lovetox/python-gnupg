@@ -4,3 +4,20 @@ requires = [
     "wheel >= 0.29.0",
 ]
 build-backend = 'setuptools.build_meta'
+
+[tool.pyright]
+pythonVersion = "3.10"
+pythonPlatform = "All"
+typeCheckingMode = "strict"
+
+reportUnnecessaryTypeIgnoreComment = "error"
+reportPropertyTypeMismatch = "error"
+
+exclude = [
+  "**/__pycache__",
+  ".git",
+  ".venv",
+  "docs",
+  "gnupg.py",
+  "test_gnupg.py",
+]
