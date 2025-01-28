@@ -412,7 +412,7 @@ class GPG:
 
     def sign_file(
         self,
-        fileobj_or_path: Any,
+        fileobj_or_path: str | ReadableFile,
         keyid: str | None = ...,
         passphrase: str | None = ...,
         clearsign: bool = ...,
