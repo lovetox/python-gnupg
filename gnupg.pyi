@@ -743,7 +743,7 @@ class GPG:
 
     def encrypt_file(
         self,
-        fileobj_or_path: Any,
+        fileobj_or_path: str | ReadableFile,
         recipients: str | list[str],
         sign: str | None = ...,
         always_trust: bool = ...,
