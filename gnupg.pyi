@@ -828,7 +828,7 @@ class GPG:
 
     def decrypt_file(
         self,
-        fileobj_or_path: Any,
+        fileobj_or_path: str | ReadableFile,
         always_trust: bool = ...,
         passphrase: str | None = ...,
         output: str | None = ...,
