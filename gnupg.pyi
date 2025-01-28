@@ -464,7 +464,7 @@ class GPG:
 
     def verify_file(
         self,
-        fileobj_or_path: Any,
+        fileobj_or_path: str | ReadableFile,
         data_filename: str | None = ...,
         close_file: bool = ...,
         extra_args: list[str] | None = ...,
